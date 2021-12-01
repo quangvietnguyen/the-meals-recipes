@@ -2,7 +2,17 @@ import React from "react";
 import { StyleSheet, View, Text } from "react-native";
 
 export default function CategoriesScreen(props) {
-  return <div></div>;
+  return (
+    <View style={styles.screen}>
+      <Text>The Categories Screen</Text>
+    </View>
+  );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  screen: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+});
