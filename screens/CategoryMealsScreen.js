@@ -12,7 +12,13 @@ export default function CategoryMealsScreen(props) {
             routeName: "MealDetail",
           });
         }}
-      ></Button>
+      />
+      <Button
+        title="Go Back"
+        onPress={() => {
+          props.navigation.pop();
+        }}
+      />
     </View>
   );
 }
